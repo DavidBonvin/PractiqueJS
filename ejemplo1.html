@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso practico Js</title>
+    <link rel="stylesheet" href="./ejemlo1.css">
+</head>
+<body>  
+<header>
+        <h1 class="H1">Online Calculator Dave</h1>   
+</header>
+    <section class="calculadores">
+        <div class="div1">  
+            <img src="./asset/arcticons_square.png" alt="cuadrado">
+            <h2>Cuadrado</h2>
+            <h3>calcula el area y perimetro </h3>
+            <form action="">
+                <label for="InputCuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado
+                </label>
+                 </br></br>
+                <input id="InputCuadrado" type="number"/>
+            </br>  </br>    </br>
+                <button class= "button1" type="button" onclick="calcularPerimetroCuadrado()">
+               calcular el perimetro 
+                </button> </br> </br>
+                <button class= "button1" type="button" onclick="calcularAreaCuadrado()">
+                calcular el area 
+                </button>
+            </form>
+            <p id="respuestaCuadrado"></p>
+        </div>
+        <div class="div2"> 
+            <img src="./asset/healthicons_triangle-large-outline.png" alt="triangulo">
+            <h2>Triangulo</h2>            
+            <h3>calcula el area y perimetro </h3>
+            <form action="">
+                <label for="InputTriangulo1">
+                    Escribe la medida del lado 1
+                </label> </br>
+                <input id="InputTriangulo1" type="number"/> </br></br>
+                <label for="InputTriangulo2">
+                    Escribe la medida del lado 2
+                </label> </br></br>
+                <input id="InputTriangulo2" type="number"/> </br></br>
+                <label for="InputTriangulo3">
+                    Escribe la medida de la base del triangulo 
+                </label> </br></br>
+                <input id="InputTriangulo3" type="number"/> </br></br>
+                <button class="button1" type="button" onclick="calcularperimetroTriangulo()">
+                calcular el perimetro </button> </br></br>
+                <label for="InputTriangulo4">
+                    Escribe la medida de la altura del triangulo 
+                </label> </br></br>
+                <input id="InputTriangulo4" type="number"/> </br></br>
+                <label for="InputTriangulo5">
+                    Escribe la medida de la altura del triangulo 
+                </label> </br></br>
+                <input id="InputTriangulo5" type="number"/> </br></br>
+                <button class="button1" type="button" onclick="calcularAreaTriangulo()">
+                calcular el Area </button> </br></br>
+                </form>
+                <p id="respuestaTriangulo"></p>
+            </div>
+        <div class="div3"> 
+            <img src="./asset/akar-icons_circle.png" alt="circulo">
+            <h2>Circulo</h2>
+            <h3>calcula el area y perimetro </h3>
+            <form action="">
+                <label for="InputCirculo">
+                    Escribe el radio del circulo
+                </label> </br>
+                <input id="InputCirculo" type="number"/> </br></br>
+                <button class="button1" type="button" onclick="calcularAreaDiametroPerimetroCirculo()">
+                    calcular el Diametro, perimetro y Area </button> </br></br>
+                    </form>
+            <p id="respuestaCirculo1"></p>
+            <p id="respuestaCirculo2"></p>
+            <p id="respuestaCirculo3"></p>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="div4"> 
+            <h2>Porcentajes</h2>
+            <h3>calcular el descuento de un precio</h3>
+            <form action="">
+                <label for="precio1">
+                    Escribe el precio original
+                </label>
+                <input type="number" id="precio1"/> <br> <br>
+                <label for="descuento1">
+                    Escribe el descuento
+                </label>
+                <input type="number" id="descuento1"/>
+            </form>
+            <button id="buttonDescuentos" onclick="buttonPrecioDescuento()">Descuento</button>
+            <p id="precioConDescuento"></p>
+        </div>
+
+
+        <div class="div5"> </div>
+
+    </section>
+</body>
+<script src="./ejemplo1.js"></script>
+<script src="./figuras.js"></script>
+</html>
