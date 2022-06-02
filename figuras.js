@@ -46,7 +46,7 @@ console.log('el area del circulo es: ' + AreaCirculo +'cm^2');
 console.group('Funciones')
 
 function funPerimetroCuadrado(lado) {
-    return lado * 4;
+    return lado * 4;g
 }
 function funAreaCuadrado(lado) {
     return lado * lado; 
